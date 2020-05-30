@@ -105,5 +105,4 @@ Vue.component('select-district', {
             this.districtId = districtId;
         }
     }
-
 });
