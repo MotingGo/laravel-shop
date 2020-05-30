@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1460c6598d4fed1790c1eed5c075befb",
+    "content-hash": "7dc003002701b1d29a1961b43ee2d531",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -118,16 +118,16 @@
         },
         {
             "name": "caouecs/laravel-lang",
-            "version": "3.0.62",
+            "version": "4.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/caouecs/Laravel-lang.git",
-                "reference": "fcb8cec051b175278e0a9efa440f0b1033d12dd7"
+                "reference": "134e1cbf9be14d97fc7937d7df784eae2d4bfa3c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/caouecs/Laravel-lang/zipball/fcb8cec051b175278e0a9efa440f0b1033d12dd7",
-                "reference": "fcb8cec051b175278e0a9efa440f0b1033d12dd7",
+                "url": "https://api.github.com/repos/caouecs/Laravel-lang/zipball/134e1cbf9be14d97fc7937d7df784eae2d4bfa3c",
+                "reference": "134e1cbf9be14d97fc7937d7df784eae2d4bfa3c",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -136,8 +136,8 @@
                     }
                 ]
             },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.10"
+            "require": {
+                "ext-json": "*"
             },
             "suggest": {
                 "ablunier/laravel-lang-installer": "Command for easily add languages to a Laravel project",
@@ -163,7 +163,7 @@
                 "laravel",
                 "lpm"
             ],
-            "time": "2019-03-17T10:36:46+00:00"
+            "time": "2020-03-17T15:24:26+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1573,16 +1573,16 @@
         },
         {
             "name": "overtrue/laravel-lang",
-            "version": "3.0.0",
+            "version": "3.0.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/overtrue/laravel-lang.git",
-                "reference": "0b0535427127417a32f297f43a4625210d6b012a"
+                "reference": "d69824be235f6142e3e4226d9918da76e4727774"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/overtrue/laravel-lang/zipball/0b0535427127417a32f297f43a4625210d6b012a",
-                "reference": "0b0535427127417a32f297f43a4625210d6b012a",
+                "url": "https://api.github.com/repos/overtrue/laravel-lang/zipball/d69824be235f6142e3e4226d9918da76e4727774",
+                "reference": "d69824be235f6142e3e4226d9918da76e4727774",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1592,9 +1592,20 @@
                 ]
             },
             "require": {
-                "caouecs/laravel-lang": "~3.0"
+                "caouecs/laravel-lang": "~4.0",
+                "symfony/process": "^5.0.0"
+            },
+            "require-dev": {
+                "laravel/framework": "~7.0"
             },
             "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Overtrue\\LaravelLang\\TranslationServiceProvider"
+                    ]
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Overtrue\\LaravelLang\\": "src/"
@@ -1615,11 +1626,13 @@
             ],
             "description": "List of 52 languages for Laravel 5",
             "keywords": [
+                "i18n",
                 "languages",
                 "laravel",
+                "locale",
                 "overtrue"
             ],
-            "time": "2016-04-29T10:05:02+00:00"
+            "time": "2020-03-06T02:39:28+00:00"
         },
         {
             "name": "phpoption/phpoption",

@@ -5,9 +5,9 @@
     <div class="row">
         <div class="col-md-10 offset-md-1">
             <div class="card panel-default">
-		<div class="card-header">
-		  收货地址列表
-                  <a href="{{ route('user_addresses.create') }}" class="float-right">新增收获地址</a>
+                <div class="card-header">
+                    收货地址列表
+                    <a href="{{ route('user_addresses.create') }}" class="float-right">新增收获地址</a>
                 </div>
                 <div class="card-body">
                     <table class="table table-bordered table-striped">
@@ -22,16 +22,16 @@
                         </thead>
                         <tbody>
                         @foreach($addresses as $address)
-                        <tr>
-                            <td>{{ $address->contact_name }}</td>
-                            <td>{{ $address->full_address }}</td>
-                            <td>{{ $address->zip }}</td>
-                            <td>{{ $address->contact_phone }}</td>
-                            <td>
-                                <button>修改</button>
-                                <button>删除</button>
-                            </td>
-                        </tr>
+                            <tr>
+                                <td>{{ $address->contact_name }}</td>
+                                <td>{{ $address->full_address }}</td>
+                                <td>{{ $address->zip }}</td>
+                                <td>{{ $address->contact_phone }}</td>
+                                <td>
+                                    <button>修改</button>
+                                    <button>删除</button>
+                                </td>
+                            </tr>
                         @endforeach
                         </tbody>
                     </table>
