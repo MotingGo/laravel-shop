@@ -28,8 +28,8 @@
                                 <td>{{ $address->zip }}</td>
                                 <td>{{ $address->contact_phone }}</td>
                                 <td>
-                                    <button>修改</button>
-                                    <button>删除</button>
+                                    <button class="btn btn-primary">修改</button>
+                                    <button class="btn btn-danger">删除</button>
                                 </td>
                             </tr>
                         @endforeach
