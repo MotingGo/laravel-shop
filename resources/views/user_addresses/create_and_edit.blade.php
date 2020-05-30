@@ -76,7 +76,7 @@
           <input type="text" class="form-control" name="contact_name" value="{{ old('contact_name', $address->contact_name) }}">
 	    </div>
       </div>
-      <div class="form-group now">
+      <div class="form-group row">
         <label class="col-form-label text-md-right col-sm-2">电话</label>
         <div class="col-sm-9">
           <input type="text" class="form-control" name="contact_phone" value="{{ old('contact_phone', $address->contact_phone) }}">
@@ -84,7 +84,7 @@
       </div>
       <div class="form-group row text-center">
         <div class="col-12">
-          <button tupe="submit" class="btn btn-primary" >提交</button>
+          <button type="submit" class="btn btn-primary" >提交</button>
 	    </div>
       </div>
     </form>
