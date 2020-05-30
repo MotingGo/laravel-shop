@@ -1,7 +1,7 @@
 // 注册一个名为 user-addresses-create-and-edit 的组件
 Vue.component('user-addresses-create-and-edit', {
   // 组件的数据
-  date() {
+  data() {
     return {
       province: '', // 省
       city: '', // 市

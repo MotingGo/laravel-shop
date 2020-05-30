@@ -31,7 +31,7 @@
     <!-- 注意这里多了 @change -->
       <select-district @change="onDistrictChanged" inline-template>
         <div class="form-group row">
-          <label class="col-form-label col-sm-2 text-md-right">省市区</label>>
+          <label class="col-form-label col-sm-2 text-md-right">省市区</label>
           <div class="col-sm-3">
 	        <select class="form-control" v-model="provinceId">
               <option value="">选择省</option>
