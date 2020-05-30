@@ -30,7 +30,7 @@
                                 <td>
                                     <a href="{{ route('user_addresses.edit', ['user_address' => $address->id]) }}" class="btn btn-primary">修改</a>
                                     <!-- 把之前删除按钮的表单替换成这个按钮，data-id 属性保存了这个地址的 id，在 js 里会用到 -->
-                                    <button class="btn btn-danger ben-del-address" type="button" data-id="{{ $address->id }}">删除</button>
+                                    <button class="btn btn-danger btn-del-address" type="button" data-id="{{ $address->id }}">删除</button>
                                 </td>
                             </tr>
                         @endforeach
@@ -63,7 +63,7 @@
                     return;
                 }
                 // 调用删除接口，用 id 来拼接出请求的 url
-                axios.delete('/user_addresses/' + id)
+                axios.delete('/user_address/' + id)
                 .then(function () {
                     // 请求成功之后重新加载页面
                     location.reload();

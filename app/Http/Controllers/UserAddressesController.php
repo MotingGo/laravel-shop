@@ -56,7 +56,7 @@ class UserAddressesController extends Controller
             'contact_phone',
         ]));
 
-        return redirect()->route('user_address.index');
+        return redirect()->route('user_addresses.index');
     }
 
     public function destroy(UserAddress $user_address)
