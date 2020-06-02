@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', 'PagesController@root')->name('boot')->middleware('verified');
+//Route::get('/', 'PagesController@root')->name('boot')->middleware('verified');
 Auth::routes(['verify' => true]);
 
 Route::group(['middleware' => ['auth', 'verified']], function () {
@@ -14,3 +14,6 @@ Route::group(['middleware' => ['auth', 'verified']], function () {
     Route::put('user_address/{user_address}', 'UserAddressesController@update')->name('user_addresses.update');
     Route::delete('user_address/{user_address}', 'UserAddressesController@destroy')->name('user_address.destroy');
 });
+
+Route::redirect('/', '/products')->name('root');
+Route::get('products', 'ProductsController@index')->name('products.index');
