@@ -58,7 +58,7 @@
         $(document).ready(function () {
             $('.search-form input[name=search]').val(filters.search)
             $('.search-form input[name=order]').val(filters.order)
-            $('.search-form input[name=order]').on('change', function() {
+            $('.search-form').on('change', function() {
                 $('.search-form').submit();
             })
         })
