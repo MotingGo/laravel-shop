@@ -15,6 +15,7 @@ Route::group(['middleware' => ['auth', 'verified']], function () {
     Route::delete('user_address/{user_address}', 'UserAddressesController@destroy')->name('user_address.destroy');
     Route::post('products/{product}/favorite', 'ProductsController@favor')->name('products.favor');
     Route::delete('products/{product}/favorite', 'ProductsController@disfavor')->name('products.disfavor');
+    Route::get('products/favorites', 'ProductsController@favorites')->name('products.favorites');
 });
 
 Route::redirect('/', '/products')->name('root');
