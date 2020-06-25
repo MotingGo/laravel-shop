@@ -14,4 +14,9 @@ class ProductSku extends Model
         'stock',
         'product_id',
     ];
+
+    public function product()
+    {
+        return $this->belongsTo(Product::class);
+    }
 }
