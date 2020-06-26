@@ -8,6 +8,7 @@
 /public/mix-manifest.json
 /public/js
 /public/css
+/public/fonts
 .env
 .env.backup
 .phpunit.result.cache
